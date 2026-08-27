@@ -49,7 +49,7 @@ jobs:
         python checkin.py
       env:
         PUSHDEER_SENDKEY: ${{ secrets.PUSHDEER_SENDKEY }}
-        GLADOS_COOKIES: ${{ secrets.GLADOS_COOKIES }}
+        GLADOS_COOKIES: "${{ secrets.GLADOS_COOKIES }}&${{ secrets.GLADOS_COOKIES_2 }}"
         GLADOS_EXCHANGE_PLAN: ${{ secrets.GLADOS_EXCHANGE_PLAN }}
         GLADOS_VERBOSE: ${{ secrets.GLADOS_VERBOSE }}
 
@@ -64,3 +64,4 @@ jobs:
         retain_days: 7
         keep_minimum_runs: 7
         delete_run_by_conclusion_pattern: success
+
