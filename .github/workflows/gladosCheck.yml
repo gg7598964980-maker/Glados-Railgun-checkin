@@ -50,7 +50,7 @@ jobs:
       env:
         PUSHDEER_SENDKEY: ${{ secrets.PUSHDEER_SENDKEY }}
         SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
-        GLADOS_COOKIES: "${{ secrets.GLADOS_COOKIES }}&${{ secrets.GLADOS_COOKIES_2 }}&${{ secrets.GLADOS_COOKIES_3 }}&${{ secrets.GLADOS_COOKIES_4 }}"
+        GLADOS_COOKIES: "${{ secrets.GLADOS_COOKIES }}&${{ secrets.GLADOS_COOKIES_2 }}&${{ secrets.GLADOS_COOKIES_3 }}&${{ secrets.GLADOS_COOKIES_4 }}&${{ secrets.GLADOS_COOKIES_5 }}"
         GLADOS_VERBOSE: ${{ secrets.GLADOS_VERBOSE }}
 
     - name: Keep alive
